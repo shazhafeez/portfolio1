@@ -1,0 +1,43 @@
+const staggerMenuItems = stagger(0.05,{startDelay:0.15})
+
+  const staggerListItems = stagger(0.6,{startDelay:0.15})
+
+  function useMenuAnimation(click){
+    const [scope,animate] = useAnimate();
+
+    useEffect(() => {
+      animate(
+        "div",
+         {x:click? 0 : 1000,
+          opacity:click? 1 : 0.2,
+          
+        },
+         {duration:1,
+          delay: click? staggerMenuItems : 0,
+          type:"spring",
+          stiffness:30,
+          damping:10
+          }
+      )
+      animate(
+        "li",
+        {
+          x:click ? 0 : 1000,
+          y:click ? 0 : -200,
+          color : click ? "white" :  "grey",
+          opacity : click ? 1 : 0,
+          
+        }, 
+        {
+          duration:1,
+          delay : click ? staggerListItems : 0,
+          type : "inertia",
+          stiffness : 30, 
+          damping : 10
+        }
+      )
+    }, [click]);
+    return scope;
+  }
+    
+  const scope = useMenuAnimation(click);

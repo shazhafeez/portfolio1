@@ -1,0 +1,214 @@
+
+.SubHome {
+  z-index: 10;
+  background-color: #141414;
+
+  margin-right: 2rem;
+  height: auto;
+  color: white;
+  opacity: 0.9;
+  position: relative;
+  bottom: 0;
+  left: 1rem;
+  
+}
+.subHomeContainer {
+  display: flex;
+}
+
+.subHomeContainer > * {
+  width: 45vw;
+  height: 50vh;
+  margin: 3rem 1rem 0rem 3rem;
+}
+.Skills {
+  display: flex;
+  flex-direction: column;
+}
+.SkillsTitle {
+  font-weight: 100;
+}
+.SkillsDesciption {
+  font-size: 1.6rem;
+}
+.viewWorks {
+  display: flex;
+  flex-direction: column;
+}
+.WorksTitle {
+  border-bottom: 1px solid white;
+  padding-bottom: 10px;
+}
+.viewWorks > p {
+  position: relative;
+  left: 35vw;
+}
+.ViewAll {
+  background-color: orange;
+  width: fit-content;
+  margin-left: 15vw;
+  border: none;
+  outline: none;
+  padding: 0.6rem 0.6rem 0.6rem 0.6rem;
+  border-radius: 2rem;
+  font-size: 0.9rem;
+  font-weight: 510;
+}
+.ViewAll:hover {
+  cursor: pointer;
+}
+.marquee {
+  background-color: orange;
+  display: flex;
+  white-space: nowrap;
+}
+.marquee > * {
+  margin-right: 30px;
+  font-size: 1.6rem;
+  color: black;
+  animation: scroll;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+}
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-100% - 32px));
+  }
+}
+.msgContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5rem;
+}
+.msg {
+  font-size: 5rem;
+  font-weight: 600;
+}
+.email {
+  background-color: orange;
+  color: black;
+  padding: 0.6rem 0.9rem 0.6rem 0.9rem;
+  border: none;
+  outline: none;
+  border-radius: 1.1rem;
+  font-size: 1rem;
+  word-spacing: 2px;
+  margin-top: 10px;
+}
+.email:hover {
+  cursor: pointer;
+}
+.AboutContainer {
+  display: flex;
+  flex-direction: row;
+  gap: 10%;
+  align-items: center;
+  margin-top: 10%;
+  border-bottom: 1px solid white;
+}
+.AboutContainer > * {
+  margin-left: 12%;
+  margin-bottom: 5%;
+}
+.aboutMeLinks > span {
+  color: rgb(148, 148, 148);
+}
+.aboutMeLinks > :not(:nth-child(1)) {
+  font-size: 1.8rem;
+}
+.create > span {
+  color: rgb(148, 148, 148);
+}
+.create > :not(:nth-child(1)) {
+  font-size: 1.8rem;
+}
+.socials > span {
+  color: rgb(148, 148, 148);
+}
+.socials > :not(:nth-child(1)) {
+  font-size: 1.8rem;
+}
+.copyright {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+  font-size: 1.1rem;
+  color: rgb(156, 156, 156);
+}
+.circleContainer {
+  display: flex;
+  margin-top: 4rem;
+  gap: 2rem;
+  padding-bottom: 5rem;
+}
+.MovingCircle {
+  height: 30vh;
+  width: 15vw;
+  border-radius: 50%;
+}
+.MovingCircle > img {
+  position: relative;
+  top: 3.1rem;
+  right: 3.5rem;
+}
+.badge {
+  width: 30vw;
+  height: 50vh;
+  background-image: url("D:/react/portfolio/src/framer logo.png");
+  background-size: cover;
+
+  position: absolute;
+  left: 50vw;
+  bottom: 3.5rem;
+}
+.borderContainer > p {
+  border-radius: 50%;
+}
+.myName {
+  height: 11.5%;
+  width: 13%;
+  z-index: 10;
+  position: absolute;
+  left: 39vw;
+  animation: rotate 10s infinite linear;
+}
+.myName > span {
+  position: absolute;
+
+  transform-origin: center;
+  height: 100%;
+  width: 100%;
+  color: white;
+}
+@keyframes rotate {
+  0% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+.badge > p > span {
+  position: absolute;
+
+  transform-origin: center;
+  height: 10vh;
+  width: 10vw;
+  left: 9.5rem;
+  top: 10.5rem;
+  color: white;
+  cursor: grab;
+}
+.aboutMeLinks {
+  display: flex;
+  flex-direction: column;
+}

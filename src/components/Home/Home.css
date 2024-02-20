@@ -1,0 +1,459 @@
+.hero {
+  z-index: 1;
+  position: relative;
+  top: 15rem;
+  left: 7rem;
+  width: 100%;
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  
+}
+video{
+  
+  z-index: -1;
+}
+.hero-btn {
+  width: 5.3rem;
+  height: 2.2rem;
+  border-radius: 2rem;
+  border: 1px solid rgb(196, 196, 196);
+  display: flex;
+  gap: 0.8rem;
+  align-items: center;
+  padding-left: 1rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: rgb(190, 190, 190);
+  background-color: black;
+}
+.heading {
+  font-size: 3.8rem;
+  font-weight: 450;
+  color: white;
+  position: relative;
+}
+.subheading {
+  font-size: 2.9rem;
+  font-weight: 450;
+  color: rgb(138, 138, 138);
+}
+.hero-btn:hover {
+  background-color: orange;
+  color: rgb(41, 41, 41);
+  font-weight: 400;
+  transition: all 0.5s ease-in;
+}
+@media screen and (max-width: 780px) {
+  .hero > * {
+    font-size: 2rem;
+    position: relative;
+    left: -2rem;
+  }
+}
+.hero > :nth-child(2) {
+  width: 100%;
+  left: -7rem;
+}
+.movable-container {
+  margin-top: 30vh;
+  position: relative;
+  display: flex;
+  width: 100%;
+  z-index: 10;
+}
+.movable-container > * {
+  z-index: 10;
+  margin-right: 30px;
+  animation: scroll;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-timing-function: linear;
+  color: white;
+  font-size: 2rem;
+}
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-100% - 32px));
+  }
+}
+.movable1 {
+  width: 100%;
+  padding: 1rem 0rem 1rem 0rem;
+  padding-left: 3rem;
+  display: flex;
+  gap: 3rem;
+  border-radius: 2rem;
+  z-index: -1;
+  color: white;
+}
+.movable1 > * {
+  font-size: 1.8rem;
+}
+
+.movable2 {
+  width: 100%;
+  padding: 1rem 0rem 1rem 0rem;
+  padding-left: 3rem;
+  display: flex;
+  gap: 3rem;
+  border-radius: 2rem;
+  z-index: -1;
+  color: white;
+}
+.movable2 > * {
+  font-size: 1.8rem;
+}
+
+.highlights {
+  margin-top: 35vh;
+
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 70vh;
+  width: 90%;
+  font-size: 4.7rem;
+  margin-bottom: 2rem;
+  font-weight: 600;
+}
+.sub-highlight {
+  color: rgb(173, 173, 173);
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+.maincontainer {
+  display: flex;
+
+  gap: 2rem;
+
+  height: 160vh;
+}
+.divcontainer1 {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+}
+.divcontainer1 > * {
+  height: 80vh;
+  width: 45vw;
+  border-radius: 2rem;
+  border: 1px solid #292929;
+  background-image: url("D:/react/portfolio/src/grain9.jpg");
+  background-size: cover;
+  opacity: 0.9;
+}
+.seconddiv {
+  width: 41vw;
+  height: 117.5vh;
+  border-radius: 2rem;
+  border: 1px solid #292929;
+  color: white;
+  background-image: url("D:/react/portfolio/src/grain9.jpg");
+  background-size: cover;
+}
+.seconddiv > p {
+  font-size: 1.2rem;
+  font-weight: 500;
+  position: relative;
+  width: fit-content;
+  left: 10rem;
+  border-radius: 1rem;
+  border: 1px solid rgb(62, 62, 62);
+  padding: 0.4rem;
+  opacity: 0.7;
+}
+.seconddiv > span {
+  position: relative;
+  left: 10rem;
+}
+.text {
+  display: flex;
+  flex-direction: column;
+  margin-left: 7rem;
+}
+.text > :nth-child(1) {
+  font-size: 1.6rem;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.text > :nth-child(2) {
+  color: orange;
+}
+.thirdcontainer {
+  display: flex;
+
+  width: 90%;
+  height: 80vh;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+.first {
+  height: 110vh;
+  width: 35vw;
+
+  border-radius: 2rem;
+  border: 1px solid #292929;
+  background-image: url("D:/react/portfolio/src/grain9.jpg");
+  background-size: cover;
+}
+.second {
+  height: 110vh;
+  width: 55vw;
+
+  border-radius: 2rem;
+  border: 1px solid #292929;
+  background-image: url("D:/react/portfolio/src/grain9.jpg");
+  background-size: cover;
+}
+.fourthcontainer {
+  display: flex;
+  margin-top: 16rem;
+  gap: 1rem;
+}
+.fourthcontainer > * {
+  height: 40vh;
+  width: 29vw;
+  margin-top: 5rem;
+  border-radius: 2rem;
+  border: 1px solid #292929;
+  background-image: url("D:/react/portfolio/src/grain9.jpg");
+  background-size: cover;
+}
+.image3 {
+  width: auto;
+  height: 120vh;
+  position: relative;
+  right: 5rem;
+  background-image: url("D:/react/portfolio/src/porjects/startup/phone_035-removebg-preview.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 1;
+}
+.image3 > img {
+  width: 20vw;
+  height: 90vh;
+  object-fit: fill;
+  margin-left: 16rem;
+}
+
+.hero {
+  z-index: 0;
+}
+.div2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.div2 > button {
+  height: fit-content;
+  margin: 0rem 0rem 0rem 0rem;
+  width: 2rem;
+  height: 2rem;
+  background: none;
+  border: 1px solid #6c6c6c;
+  outline: none;
+  border-radius: 0.6rem;
+}
+.icon {
+  position: relative;
+  right: 2rem;
+  top: 13rem;
+}
+.icon > i:hover {
+  scale: 1.3;
+  cursor: pointer;
+  transition: all 0.2s ease-in;
+}
+.div2 > img {
+  width: 30vw;
+  height: 80vh;
+  object-fit: cover;
+  border-radius: 1rem;
+}
+.div2 > button:hover {
+  scale: 1.2;
+  box-shadow: 1px 1px 0.1px 1px rgb(35, 35, 35);
+  transition: all 0.1s ease-in;
+}
+.secondContainer {
+  background-color: white;
+  width: 45vw;
+  height: 65vh;
+  margin: 9rem 2rem 2rem 4rem;
+  border-radius: 2rem;
+}
+.secondContainer > img {
+  object-fit: cover;
+  width: 42vw;
+  height: 55vh;
+  margin: 2rem 2rem 0rem 1rem;
+  border-radius: 1rem;
+  border: 1px solid #dddcdc;
+}
+.second > i {
+  margin: 4rem 0rem 0rem 3rem;
+}
+.second > i:hover {
+  scale: 1.3;
+  cursor: pointer;
+  transition: all 0.2s ease-in;
+}
+.div1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.div1 > * {
+  margin: 2rem;
+  width: 30vw;
+  height: 60vh;
+  border-radius: 1rem;
+}
+.div1 > :nth-child(1) {
+  z-index: 1;
+}
+.div1 > :nth-child(2) {
+  position: relative;
+  top: -20rem;
+  left: 2rem;
+}
+.tablet-bg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #102439;
+  margin: 1rem;
+  height: 90vh;
+  border-radius: 2rem;
+  border: 1px solid rgb(55, 55, 55);
+}
+.tablet-bg > img {
+  margin: 2rem;
+  width: 30vw;
+  height: 80vh;
+  border-radius: 1rem;
+  box-shadow: 2px 2px 1px 1px #102238;
+  z-index: 1;
+}
+.mythird {
+  width: 85vw;
+  height: 75vh;
+}
+
+.mythird > img {
+  width: 75vw;
+  height: 60vh;
+  margin: 2rem 1rem 1rem 4rem;
+  border-radius: 1rem;
+}
+.icon2 {
+  margin-top: 3.5rem;
+  margin-left: 1rem;
+}
+.icon2 > i:hover {
+  scale: 1.3;
+  cursor: pointer;
+  transition: all 0.2s ease-in;
+}
+.icon3 {
+  margin: 0rem 0rem 4rem 2rem;
+}
+.icon3 > i:hover {
+  scale: 1.3;
+  cursor: pointer;
+  transition: all 0.2s ease-in;
+}
+.icon4 {
+  position: relative;
+  top: -23rem;
+}
+.icon4 > i:hover {
+  scale: 1.3;
+  cursor: pointer;
+  transition: all 0.2s ease-in;
+}
+.myfourth {
+  background-image: url("D:/react/portfolio/src/grain9.jpg");
+  width: 45vw;
+  height: 70vh;
+  background-size: cover;
+  border-radius: 2rem;
+  position: relative;
+  top: -10rem;
+}
+
+.myfourth {
+  border: none;
+  outline: none;
+  margin-top: 2rem;
+}
+.iconContainer {
+  position: relative;
+  top: -13rem;
+  left: 3rem;
+  display: flex;
+  gap: 2rem;
+  font-size: 1.1rem;
+}
+.allprojects {
+  background-color: #3a3a3a;
+  color: white;
+  font-weight: 600;
+  padding: 0.6rem;
+  border-radius: 0.5rem;
+}
+.myfourth:hover > .myfourth > i {
+  scale: 1.3;
+  cursor: pointer;
+  transition: all 0.2s ease-in;
+}
+.folderDetails {
+  width: 23vw;
+  height: 40vh;
+  position: relative;
+  left: 6.7rem;
+  top: -2rem;
+}
+.folderDetails {
+  display: flex;
+  flex-wrap: wrap;
+}
+.folderDetails > * > img {
+  width: 2rem;
+  height: 2rem;
+}
+
+.herosection {
+  position: relative;
+
+  z-index: 1;
+  height: 600vh;
+}
+@media  screen and (max-width:712px) {
+  .section1>*{
+    font-size: 1.4rem;
+    
+   
+  }
+  
+  .section1>:nth-child(1){
+   
+    margin-top: -30vh;
+  }
+  .section1>:nth-child(1)>button{
+    font-size: 0.7rem;
+    height: 1.4rem;
+    width: 11vw;
+  }
+  .movable-container>*{
+    font-size: 1rem;
+    margin-top: -13vh;
+  }
+}

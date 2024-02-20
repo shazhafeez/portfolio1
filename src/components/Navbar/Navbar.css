@@ -1,0 +1,271 @@
+nav{
+    
+    display: flex;
+    flex-direction: row;
+    gap:25vw;
+    position: fixed;
+    width: 100%;
+    height: 5rem;
+    z-index: 2;
+    top:0rem;
+    color :white;
+    margin-top: 1rem;
+    
+    
+}
+.main{
+    
+    display: flex;
+    gap:1.3rem;
+    width: 300px;
+    border-radius: 6rem;
+    height: 3.4rem;
+    margin-top: 0.5rem;
+    align-items: center;
+    font-size: 1.22rem;
+    border: 1px solid rgb(57, 57, 57);
+    background-color: rgb(18, 18, 18,0.6);
+    
+    backdrop-filter: blur(24px);
+}
+.home{
+    margin-left: 0.5rem;
+    width: 5rem;
+    padding: 0.4rem 0.9rem 0.4rem 0.9rem;
+    border-radius:6rem ;
+}
+.yellowdot{
+    background-color: orange;
+    border-radius: 50%;
+    width: 0.4rem;
+    height: 0.4rem;
+    position: relative;
+    left: 1.3rem;
+}
+.main>*:not(:nth-child(1)){
+    height: 1.65rem;
+    width:5.5rem;
+    padding: 0.4rem 0.3rem 0.4rem 0.9rem;
+    border-radius:6rem ;
+}
+.main>*:hover{
+    background-color: orange;
+    transition: ease-in;
+    transition-duration: 0.2s;
+}
+.contact{
+    margin-right: 2rem;
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    border-radius: 6rem ;
+    padding: 0.2rem 0.9rem 0.2rem 0.9rem;
+    font-size: 1.1rem;
+    height:2rem;
+    border: 1px solid rgb(57, 57, 57);
+    background-color: rgba(39, 39, 39, 0.6);
+    cursor: pointer;
+    white-space: nowrap;
+    
+    
+    
+    
+}
+img{
+    width: 6rem;
+    height: 6rem;
+    object-fit: cover;
+    margin-left: 4rem;
+    
+    
+}
+.contact>i{
+    display: none;
+}
+.contact:hover{
+    transform: scaleX(1.01);
+    transform: translateX(-0.1rem);
+    transition: ease-in-out;
+    transition-duration:0.4s;
+    position: absolute;
+    right:1rem;
+    
+}
+.contact:hover>i{
+    display: inline;
+    padding-left: 0.4rem; 
+}
+@media  screen and (max-width:1290px) {
+    
+    nav{
+        gap:17rem;
+        
+    }
+    .contact{
+        position: absolute;
+        right:1rem;
+    }
+    
+    
+}
+@media screen and (max-width:1200px) {
+    
+    nav{
+        gap:10rem;
+    }
+    .contact:hover{
+        position: absolute;
+        right: 2rem;
+    }
+    
+}
+@media  screen and (max-width:1090px) {
+    
+    nav{
+        gap:10rem;
+    }
+    .contact{
+        position: absolute;
+    }
+    
+}
+@media screen and (max-width:1018px){
+    nav{
+       gap:6rem; 
+    }
+    .contact{
+        position: absolute;
+    }
+}
+@media screen and (max-width:790px){
+    nav>*:not(:nth-child(1)):not(:nth-child(2)){
+        display: none;
+    }
+}
+.globemenu{
+   position: relative;
+   right:-20rem;
+   top:2.2rem;
+}
+
+.menu-enabled{
+    display: flex;
+    flex-direction: column;
+    background-color: #121212;
+    display: none;
+    position: absolute;
+    width: 100vw;
+    
+    
+    padding-top: 6rem;
+    
+    height: 30vh;
+    padding-left: 1rem;
+    margin: 1rem;
+    padding-right: 1rem;
+    
+    z-index:10;
+    color: white;
+    font-size: 1.3rem;
+   
+
+    border-radius: 2rem;
+    
+}
+.menu-enabled>*{
+    padding-bottom: 1.1rem;
+    padding-left: 3rem;
+    
+}
+
+
+/* @media screen and (max-width:780px) {
+    .globemenu{
+        display: inline-block;
+    }
+    .menu-enabled{
+        
+       
+        
+    }
+}
+@media screen and (min-width:780px){
+    .globemenu{
+        display: none;
+    }
+    .menu-enabled{
+       
+        
+    }
+}
+@media screen and (max-width:780px){
+    .globemenu{
+        position: relative;
+        right: -17rem;
+    }
+    .menu-enabled{
+        
+        width: 90vw;
+        
+        
+    }
+}
+@media screen and(max-width:660px) {
+    .menu-enabled{
+        
+        width: 90vw;
+        
+        
+    }
+}
+@media screen and (max-width:550px){
+    .globemenu{
+        right:-11rem;
+    }
+    .menu-enabled{
+        
+        z-index: 10;
+        
+        
+    }
+} */
+@media screen and (max-width:712px) and (max-height:430px){
+    .main{
+        width: 30vw;
+        height: 10vh;
+    }
+    .main>*{
+        font-size: 0.6rem;
+        height: 0.7rem;
+        width: 7vw;
+    }
+    .main>:nth-child(1){
+        background-color: orange;
+    }
+    .main>:nth-child(2){
+        height: 0.7rem;
+    }
+    .main>:nth-child(3){
+        margin-right: 0.4rem;
+        
+        height: 0.7rem;
+    }
+    
+}
+li{
+    list-style-type: none;
+    margin-bottom: 0.7rem;
+}
+.mobile{
+    
+    width: 200vw;
+    position: absolute;
+    top:1rem;
+   
+   height: 100vh;
+    
+}
+a{
+    text-decoration: none;
+    color: white;
+}
