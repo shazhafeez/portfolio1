@@ -1,9 +1,7 @@
 import React, { useEffect } from "react";
 import "./Footer.css";
 import { motion } from "framer-motion";
-import logo from "D:/react/portfolio/src/components/Navbar/Untitled_design__2_-removebg-preview.png";
-import { CircleType } from "circletype";
-import framerlogo from "D:/react/portfolio/src/framer logo.png";
+import logo from "../Navbar/Untitled_design__2_-removebg-preview.png";
 import { Link } from "react-router-dom";
 
 const Footer = () => {
@@ -17,14 +15,7 @@ const Footer = () => {
       )
       .join("");
 
-    const FramerText = document.querySelector(".badge p");
-    FramerText.innerHTML = FramerText.innerText
-      .split("")
-      .map(
-        (character, index) =>
-          `<span style="transform:rotate(${index * 12}deg)">${character}</span>`
-      )
-      .join("");
+    
   }, []);
   return (
     
@@ -117,7 +108,6 @@ const Footer = () => {
               </div>
             </div>
             <div className="badge">
-              <p>framer motion framer motion</p>
             </div>
           </div>
         </div>

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./Contact.css";
-import videobg from "D:/react/portfolio/src/components/Home/200123_01_Particle_Snow_seamless_loop.mp4";
+import videobg from "../../components/Home/200123_01_Particle_Snow_seamless_loop.mp4";
 
 const Contact = () => {
   const [width, setwidth] = useState("100%");

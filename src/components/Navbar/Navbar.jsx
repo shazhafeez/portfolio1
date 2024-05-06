@@ -1,11 +1,10 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import "./Navbar.css";
 import logo from "./Untitled_design__2_-removebg-preview.png";
-import { motion, stagger, useAnimate } from "framer-motion";
+import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 
 function Navbar() {
-  const [click, setClick] = useState(false);
   
 
   const NavVariant = {

@@ -7,10 +7,8 @@
   height: 60vh;
   display: flex;
   flex-direction: column;
-  
 }
-video{
-  
+video {
   z-index: -1;
 }
 .hero-btn {
@@ -144,9 +142,16 @@ video{
   width: 45vw;
   border-radius: 2rem;
   border: 1px solid #292929;
-  background-image: url("D:/react/portfolio/src/grain9.jpg");
+  background-image: url("../../../src/grain9.jpg");
   background-size: cover;
   opacity: 0.9;
+}
+.second {
+  background: radial-gradient(
+    circle at 24.1% 68.8%,
+    rgb(50, 50, 50) 0%,
+    rgb(0, 0, 0) 99.4%
+  );
 }
 .seconddiv {
   width: 41vw;
@@ -154,8 +159,14 @@ video{
   border-radius: 2rem;
   border: 1px solid #292929;
   color: white;
-  background-image: url("D:/react/portfolio/src/grain9.jpg");
+  /* background-image: url("../../../src/grain9.jpg"); */
   background-size: cover;
+  background-color: green;
+  background: radial-gradient(
+    circle at 24.1% 68.8%,
+    rgb(50, 50, 50) 0%,
+    rgb(0, 0, 0) 99.4%
+  );
 }
 .seconddiv > p {
   font-size: 1.2rem;
@@ -186,50 +197,59 @@ video{
 }
 .thirdcontainer {
   display: flex;
-
-  width: 90%;
-  height: 80vh;
+  width: 80vw;
+  height: 60vh;
   gap: 2rem;
   margin-top: 2rem;
 }
 .first {
-  height: 110vh;
-  width: 35vw;
-
+  height: 70vh;
+  width: 30vw;
+  background-color: green;
   border-radius: 2rem;
   border: 1px solid #292929;
-  background-image: url("D:/react/portfolio/src/grain9.jpg");
+  background-image: url("../../../src/grain9.jpg");
   background-size: cover;
 }
+.tablet-bg > image {
+  background-color: yellow;
+  width: 10vw;
+  height: 10vh;
+}
 .second {
-  height: 110vh;
-  width: 55vw;
+  height: 65vh;
+  width: 44vw;
 
   border-radius: 2rem;
   border: 1px solid #292929;
-  background-image: url("D:/react/portfolio/src/grain9.jpg");
+  background-image: url("../../../src/grain9.jpg");
   background-size: cover;
 }
 .fourthcontainer {
   display: flex;
   margin-top: 16rem;
   gap: 1rem;
+  
 }
 .fourthcontainer > * {
   height: 40vh;
   width: 29vw;
-  margin-top: 5rem;
+  margin-top: 1rem;
   border-radius: 2rem;
   border: 1px solid #292929;
-  background-image: url("D:/react/portfolio/src/grain9.jpg");
   background-size: cover;
+  background: radial-gradient(
+    circle at 24.1% 68.8%,
+    rgb(50, 50, 50) 0%,
+    rgb(0, 0, 0) 99.4%
+  );
 }
 .image3 {
   width: auto;
   height: 120vh;
   position: relative;
   right: 5rem;
-  background-image: url("D:/react/portfolio/src/porjects/startup/phone_035-removebg-preview.png");
+  background-image: url("../../porjects/startup/phone_035-removebg-preview.png");
   background-repeat: no-repeat;
   background-size: cover;
   opacity: 1;
@@ -249,16 +269,24 @@ video{
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  max-width: 50vw;
+  height: 65vh;
+  background: radial-gradient(
+    circle at 24.1% 68.8%,
+    rgb(50, 50, 50) 0%,
+    rgb(0, 0, 0) 99.4%
+  );
 }
 .div2 > button {
   height: fit-content;
   margin: 0rem 0rem 0rem 0rem;
-  width: 2rem;
-  height: 2rem;
+  width: 1.2rem;
+  height: 1.2rem;
   background: none;
   border: 1px solid #6c6c6c;
   outline: none;
   border-radius: 0.6rem;
+  font-size: 0.3rem;
 }
 .icon {
   position: relative;
@@ -272,7 +300,7 @@ video{
 }
 .div2 > img {
   width: 30vw;
-  height: 80vh;
+  height: 60vh;
   object-fit: cover;
   border-radius: 1rem;
 }
@@ -283,16 +311,16 @@ video{
 }
 .secondContainer {
   background-color: white;
-  width: 45vw;
-  height: 65vh;
-  margin: 9rem 2rem 2rem 4rem;
+  width: 42vw;
+  height: 60vh;
+  margin: 1rem 1rem 1rem 1rem;
   border-radius: 2rem;
 }
 .secondContainer > img {
   object-fit: cover;
-  width: 42vw;
+  width: 40vw;
   height: 55vh;
-  margin: 2rem 2rem 0rem 1rem;
+  margin: 1rem 1rem 0rem 1rem;
   border-radius: 1rem;
   border: 1px solid #dddcdc;
 }
@@ -309,10 +337,17 @@ video{
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  width: 26vw;
+  height: 50vh;
+  background: radial-gradient(
+    circle at 24.1% 68.8%,
+    rgb(50, 50, 50) 0%,
+    rgb(0, 0, 0) 99.4%
+  );
 }
 .div1 > * {
   margin: 2rem;
-  width: 30vw;
+  width: 20vw;
   height: 60vh;
   border-radius: 1rem;
 }
@@ -343,15 +378,16 @@ video{
   z-index: 1;
 }
 .mythird {
-  width: 85vw;
-  height: 75vh;
+  width: 72vw;
+  height: 63vh;
 }
 
 .mythird > img {
-  width: 75vw;
+  object-fit: contain;
+  width: 70vw;
   height: 60vh;
-  margin: 2rem 1rem 1rem 4rem;
-  border-radius: 1rem;
+  margin: 1rem 1rem 1rem 1rem;
+  border-radius: 2rem;
 }
 .icon2 {
   margin-top: 3.5rem;
@@ -380,19 +416,23 @@ video{
   transition: all 0.2s ease-in;
 }
 .myfourth {
-  background-image: url("D:/react/portfolio/src/grain9.jpg");
-  width: 45vw;
-  height: 70vh;
+  background-image: url("../../../src/grain9.jpg");
+  width: 35vw;
+  height: 50vh;
   background-size: cover;
   border-radius: 2rem;
   position: relative;
   top: -10rem;
+  background: radial-gradient(
+    circle at 24.1% 68.8%,
+    rgb(50, 50, 50) 0%,
+    rgb(0, 0, 0) 99.4%
+  );
 }
 
 .myfourth {
   border: none;
   outline: none;
-  margin-top: 2rem;
 }
 .iconContainer {
   position: relative;
@@ -401,6 +441,10 @@ video{
   display: flex;
   gap: 2rem;
   font-size: 1.1rem;
+}
+.iconContainer > Link {
+  background-color: tomato;
+  font-size: 0.5rem;
 }
 .allprojects {
   background-color: #3a3a3a;
@@ -436,23 +480,20 @@ video{
   z-index: 1;
   height: 600vh;
 }
-@media  screen and (max-width:712px) {
-  .section1>*{
+@media screen and (max-width: 712px) {
+  .section1 > * {
     font-size: 1.4rem;
-    
-   
   }
-  
-  .section1>:nth-child(1){
-   
+
+  .section1 > :nth-child(1) {
     margin-top: -30vh;
   }
-  .section1>:nth-child(1)>button{
+  .section1 > :nth-child(1) > button {
     font-size: 0.7rem;
     height: 1.4rem;
     width: 11vw;
   }
-  .movable-container>*{
+  .movable-container > * {
     font-size: 1rem;
     margin-top: -13vh;
   }

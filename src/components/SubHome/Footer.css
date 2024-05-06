@@ -163,7 +163,7 @@
 .badge {
   width: 30vw;
   height: 50vh;
-  background-image: url("D:/react/portfolio/src/framer logo.png");
+  background-image: url("../../../src/framer logo.png");
   background-size: cover;
 
   position: absolute;

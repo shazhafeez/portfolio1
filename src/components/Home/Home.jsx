@@ -1,43 +1,29 @@
-import React, { useRef } from "react";
+import React from "react";
 import videobg from "./200123_01_Particle_Snow_seamless_loop.mp4";
-import { useEffect, useCallback, useState } from "react";
+import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import "./Home.css";
-import travel from "D:/react/portfolio/src/porjects/travel web/mobile home.png";
-import news from "D:/react/portfolio/src/porjects/newsapp API/mobile.png";
-import text from "D:/react/portfolio/src/porjects/text utility/mobile main.png";
-import amazon from "D:/react/portfolio/src/porjects/amazon clone/hero-header.png";
-import currency from "D:/react/portfolio/src/porjects/currency converter/mobile.png";
-import pass from "D:/react/portfolio/src/porjects/password generatore/mobile.png";
-import folder from "D:/react/portfolio/src/Folder no bg.png";
-import {
-  motion,
-  useAnimate,
-  stagger,
-  useAnimation,
-  animate,
-  AnimatePresence,
-  calcLength,
-  useInView,
-} from "framer-motion";
+import news from "../../porjects/newsapp API/mobile.png";
+import text from "../../porjects/text utility/mobile main.png";
+import amazon from "../../porjects/amazon clone/hero-header.png";
+import folder from "../../../src/Folder no bg.png";
+import { motion, useAnimate, stagger } from "framer-motion";
 // all startup images
-import startuppage1 from "D:/react/portfolio/src/porjects/startup/page1.png";
-import startuppage2 from "D:/react/portfolio/src/porjects/startup/page2.png";
-import startuppage3 from "D:/react/portfolio/src/porjects/startup/page3.png";
-import startuppage4 from "D:/react/portfolio/src/porjects/startup/page4.png";
-import startupfooter from "D:/react/portfolio/src/porjects/startup/footer.png";
-import startupmenudown from "D:/react/portfolio/src/porjects/startup/menu down.png";
-import startuploginpage from "D:/react/portfolio/src/porjects/startup/login page.png";
+import startuppage1 from "../../porjects/startup/page1.png";
+import startuppage2 from "../../porjects/startup/page2.png";
+import startuppage3 from "../../porjects/startup/page3.png";
+import startuppage4 from "../../porjects/startup/page4.png";
+import startupfooter from "../../porjects/startup/footer.png";
+import startupmenudown from "../../porjects/startup/menu down.png";
+import startuploginpage from "../../porjects/startup/login page.png";
 
-import icon1 from "D:/react/portfolio/src/all-inclusive.png";
-import icon2 from "D:/react/portfolio/src/select-all.png";
-import icon3 from "D:/react/portfolio/src/select.png";
-import icon4 from "D:/react/portfolio/src/selection.png";
+import icon1 from "../../../src/all-inclusive.png";
+import icon2 from "../../../src/select-all.png";
+import icon3 from "../../../src/select.png";
 
-import realstateHomepage from "D:/react/portfolio/src/porjects/real estate business/realstate homepage mobile.png";
-import realstateMain from "D:/react/portfolio/src/porjects/real estate business/main.png";
+import realstateHomepage from "../../porjects/real estate business/realstate homepage mobile.png";
+import realstateMain from "../../porjects/real estate business/main.png";
 
-import Footer from "../SubHome/Footer";
 const realEstateImage = [
   startuppage1,
   startuppage2,
@@ -208,27 +194,6 @@ function Home() {
             <div className="venture">venture</div>
             <div className="venture">venture</div>
             <div className="venture">venture</div>
-
-            {/* <motion.div
-              className="movable2"
-              initial={{
-                x: 1000,
-              }}
-              animate={{
-                x: [-500, -1000, -1500, -2000],
-                opacity: [1, 0.9, 0.6, 0.4],
-                color: "orange",
-              }}
-              transition={{
-                duration: 25,
-
-                repeat: Infinity,
-                repeatType: "loop",
-                ease: "linear",
-              }}
-            >
-              
-            </motion.div> */}
           </div>
           {/* highlights */}
           <div className="highlights">
@@ -243,7 +208,7 @@ function Home() {
             initial="initial"
             whileInView="animate"
             viewport={{
-              once:true
+              once: true,
             }}
           >
             <div className="divcontainer1">
@@ -263,12 +228,6 @@ function Home() {
                     },
                   }}
                 />
-                <Link to="/Work/RealState" className="icon4">
-                  <i
-                    class="fa-solid fa-arrow-up-right-from-square fa-lg"
-                    style={{ color: "#ffffff" }}
-                  ></i>
-                </Link>
               </div>
               <div className="div2">
                 <button className="left" onClick={() => MoveToLeft(page)}>
@@ -284,57 +243,31 @@ function Home() {
                     style={{ color: "#ffffff" }}
                   ></i>
                 </button>
-                <Link to="/Work/TitanStartup" className="icon">
-                  <i
-                    class="fa-solid fa-arrow-up-right-from-square fa-lg"
-                    style={{ color: "#ffffff" }}
-                  ></i>
-                </Link>
               </div>
             </div>
-            {/* <div className="seconddiv">
-              <motion.div className="image3">
-                <img src={travel} alt="" />
-              </motion.div>
-            </div> */}
           </motion.div>
-          <motion.div className="thirdcontainer"
+          <motion.div
+            className="thirdcontainer"
             variants={DivVariant}
             initial="initial"
             whileInView="animate"
             viewport={{
-              once:true
+              once: true,
             }}
           >
-            <div className="first">
-              <div className="tablet-bg">
-                <motion.img src={text} alt="" />
-              </div>
-              <Link to="/Work/TextUtility" className="icon2">
-                <i
-                  class="fa-solid fa-arrow-up-right-from-square fa-lg"
-                  style={{ color: "#ffffff" }}
-                ></i>
-              </Link>
-            </div>
             <div className="second">
               <div className="secondContainer">
                 <img src={news} alt="" />
               </div>
-              <Link to="/Work/NewsAPI">
-                <i
-                  class="fa-solid fa-arrow-up-right-from-square fa-lg"
-                  style={{ color: "#ffffff" }}
-                ></i>
-              </Link>
             </div>
           </motion.div>
-          <motion.div className="fourthcontainer"
+          <motion.div
+            className="fourthcontainer"
             variants={DivVariant}
             initial="initial"
             whileInView="animate"
             viewport={{
-              once:true
+              once: true,
             }}
           >
             {/* <div className="myfirst">
@@ -345,12 +278,7 @@ function Home() {
             </div> */}
             <div className="mythird">
               <img src={amazon} alt="" />
-              <Link to="/Work/Amazon" className="icon3">
-                <i
-                  class="fa-solid fa-arrow-up-right-from-square fa-lg"
-                  style={{ color: "#ffffff" }}
-                ></i>
-              </Link>
+              
               <motion.div
                 className="myfourth"
                 onHoverStart={() => scaleIcon(scale)}

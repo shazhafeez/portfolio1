@@ -1,22 +1,22 @@
 import React, { useState } from "react";
-import videobg from "D:/react/portfolio/src/components/Home/200123_01_Particle_Snow_seamless_loop.mp4";
+import videobg from "../../components/Home/200123_01_Particle_Snow_seamless_loop.mp4";
 import "./Work.css";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 
 // All images
-import realstateHomepage from "D:/react/portfolio/src/porjects/real estate business/realstate homepage mobile.png";
-import realstateMain from "D:/react/portfolio/src/porjects/real estate business/main.png";
-import startuppage1 from "D:/react/portfolio/src/porjects/startup/page1.png";
-import startuppage2 from "D:/react/portfolio/src/porjects/startup/page2.png";
-import startuppage3 from "D:/react/portfolio/src/porjects/startup/page3.png";
-import startuppage4 from "D:/react/portfolio/src/porjects/startup/page4.png";
-import startupfooter from "D:/react/portfolio/src/porjects/startup/footer.png";
-import startupmenudown from "D:/react/portfolio/src/porjects/startup/menu down.png";
-import startuploginpage from "D:/react/portfolio/src/porjects/startup/login page.png";
-import news from "D:/react/portfolio/src/porjects/newsapp API/mobile.png";
-import text from "D:/react/portfolio/src/porjects/text utility/mobile main.png";
-import amazon from "D:/react/portfolio/src/porjects/amazon clone/hero-header.png";
+import realstateHomepage from "../../porjects/real estate business/realstate homepage mobile.png";
+import realstateMain from "../../porjects/real estate business/main.png";
+import startuppage1 from "../../porjects/startup/page1.png";
+import startuppage2 from "../../porjects/startup/page2.png";
+import startuppage3 from "../../porjects/startup/page3.png";
+import startuppage4 from "../../porjects/startup/page4.png";
+import startupfooter from "../../porjects/startup/footer.png";
+import startupmenudown from "../../porjects/startup/menu down.png";
+import startuploginpage from "../../porjects/startup/login page.png";
+import news from "../../porjects/newsapp API/mobile.png";
+import text from "../../porjects/text utility/mobile main.png";
+import amazon from "../../porjects/amazon clone/hero-header.png";
 
 const realEstateImage = [
   startuppage1,
@@ -152,19 +152,8 @@ const Work = () => {
                     style={{ color: "#ffffff" }}
                   ></i>
                 </button>
-                <Link to="/Work/TitanStartup" className="icon">
-                  <i
-                    class="fa-solid fa-arrow-up-right-from-square fa-lg"
-                    style={{ color: "#ffffff" }}
-                  ></i>
-                </Link>
               </div>
             </div>
-            {/* <div className="seconddiv">
-              <motion.div className="image3">
-                <img src={travel} alt="" />
-              </motion.div>
-            </div> */}
           </motion.div>
           <motion.div
             className="thirdcontainer"
@@ -175,27 +164,10 @@ const Work = () => {
               once: true,
             }}
           >
-            <div className="first">
-              <div className="tablet-bg">
-                <motion.img src={text} alt="" />
-              </div>
-              <Link to="/Work/TextUtility" className="icon2">
-                <i
-                  class="fa-solid fa-arrow-up-right-from-square fa-lg"
-                  style={{ color: "#ffffff" }}
-                ></i>
-              </Link>
-            </div>
             <div className="second">
               <div className="secondContainer">
                 <img src={news} alt="" />
               </div>
-              <Link to="/Work/NewsAPI">
-                <i
-                  class="fa-solid fa-arrow-up-right-from-square fa-lg"
-                  style={{ color: "#ffffff" }}
-                ></i>
-              </Link>
             </div>
           </motion.div>
           <motion.div
@@ -209,12 +181,6 @@ const Work = () => {
           >
             <div className="mythird">
               <img src={amazon} alt="" />
-              <Link to="/Work/Amazon" className="icon3">
-                <i
-                  class="fa-solid fa-arrow-up-right-from-square fa-lg"
-                  style={{ color: "#ffffff" }}
-                ></i>
-              </Link>
             </div>
           </motion.div>
         </div>
